@@ -23,7 +23,7 @@ class Project{
         this.stageList = setstages;
     }
     public long getDuration() throws ParseException {
-        return ((format.parse(dateEnd).getTime()) - (format.parse(dateStart).getTime()))/((1000 * 60 * 60 * 24))%365);
+        return (format.parse(dateEnd).getTime() - format.parse(dateStart).getTime())/((1000 * 60 * 60 * 24)%365);
     }
     public String getStartDate(){
         return dateStart;

@@ -12,8 +12,9 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("timeline.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 900, 600);
+        Scene scene = new Scene(fxmlLoader.load(), 1000, 600);
         stage.setScene(scene);
+        stage.setTitle("Project Timeline Viewer");
         stage.setResizable(false);
         stage.show();
     }

@@ -1,10 +1,25 @@
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.util.CellReference;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class Main {
+public class Main extends Application {
+    @Override
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("timeline.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 900, 600);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
+    }
+
     public static void main(String[] args) {
+        launch();
         String xlsFile = "Projects.xls";
         try {
             FileInputStream fileInput = new FileInputStream(xlsFile);

@@ -5,13 +5,14 @@
 <?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timelineController">
    <center>
       <AreaChart horizontalGridLinesVisible="false" prefHeight="580.0" prefWidth="720.0" BorderPane.alignment="CENTER">
         <xAxis>
@@ -37,7 +38,13 @@
                   <TextField prefHeight="25.0" prefWidth="114.0" HBox.hgrow="ALWAYS" />
                </children>
             </HBox>
-            <ListView fx:id="lvProject" prefHeight="677.0" prefWidth="192.0" style="-fx-focus-color: transparent;" />
+            <TableView fx:id="tvProject" prefHeight="692.0" prefWidth="192.0">
+              <columns>
+                <TableColumn fx:id="tcID" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="tcDateStart" prefWidth="75.0" text="Date Start" />
+                  <TableColumn fx:id="tcDateEnd" prefWidth="75.0" text="Date End" />
+              </columns>
+            </TableView>
          </children>
       </VBox>
    </left>

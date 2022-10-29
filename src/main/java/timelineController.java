@@ -7,7 +7,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 
-public class timelineController {
+class timelineController {
     @FXML
     private TableView<Project> tvProject;
     @FXML

@@ -1,12 +1,13 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
 class ProjectStage{
     private String indicator;
-    private int value;
+    private Integer value;
     private String date;
-
-    public ProjectStage(String indicator, int valueNew, String date){
+    public ProjectStage(String indicator, Integer value, String date){
         this.indicator = indicator;
         this.value = value;
-        this.date = date;
+        this.date=date;
     }
     public String getDate(){
         return date;

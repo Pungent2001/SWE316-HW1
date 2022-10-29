@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import org.apache.poi.ss.usermodel.DataFormatter;
 
 public class Main extends Application {
+    static ArrayList<Project> projects = new ArrayList<Project>();
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("timeline.fxml"));
@@ -23,7 +24,7 @@ public class Main extends Application {
 
     public static void main(String[] args) {
 
-        ArrayList<Project> projects = new ArrayList<Project>();
+
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         String projFile = "Projects.xls";

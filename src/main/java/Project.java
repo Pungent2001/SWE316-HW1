@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 class Project{
     private ArrayList<ProjectStage> stageList = new ArrayList<>();
-    private String projectID;
+    public String projectID;
     private int stage;
     private String dateStart;
     private String dateEnd;
@@ -28,15 +28,19 @@ class Project{
             return 0;}
         return (format.parse(dateEnd).getTime() - format.parse(dateStart).getTime())/((1000 * 60 * 60 * 24)%365);
     }
+
     public String getStartDate(){
         return dateStart;
     }
+
     public String getEndDate(){
         return dateEnd;
     }
-    public String getProjectID(){
+
+    public String getProjectID() {
         return projectID;
     }
+
     public void addStage(ProjectStage projStage) {
         this.stageList.add(projStage);
     }

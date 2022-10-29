@@ -1,10 +1,10 @@
 import java.text.SimpleDateFormat;
 import java.util.Date;
-class Stage{
-    private Boolean indicator;
-    private Integer value;
+class ProjectStage{
+    private boolean indicator;
+    private int value;
     private String date;
-    public Stage(Boolean indicator, Integer value, String date){
+    public ProjectStage(boolean indicator, int value, String date){
         this.indicator = indicator;
         this.value = value;
         this.date=date;

@@ -1,18 +1,17 @@
-import java.text.SimpleDateFormat;
-import java.util.Date;
 class ProjectStage{
-    private boolean indicator;
+    private String indicator;
     private int value;
     private String date;
-    public ProjectStage(boolean indicator, int value, String date){
+
+    public ProjectStage(String indicator, int valueNew, String date){
         this.indicator = indicator;
         this.value = value;
-        this.date=date;
+        this.date = date;
     }
     public String getDate(){
         return date;
     }
-    public Boolean getIndicator() {
+    public String getIndicator() {
         return indicator;
     }
     public Integer getValue(){

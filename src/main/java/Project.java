@@ -3,7 +3,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 class Project{
-    private ArrayList<ProjectStage> stageList;
+    private ArrayList<ProjectStage> stageList = new ArrayList<>();
     private String projectID;
     private int stage;
     private String dateStart;
@@ -36,5 +36,8 @@ class Project{
     }
     public String getProjectID(){
         return projectID;
+    }
+    public void addStage(ProjectStage projStage) {
+        this.stageList.add(projStage);
     }
 }

@@ -9,13 +9,13 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 class timelineController {
     @FXML
-    private TableView<Project> tvProject;
+    public TableView<Project> tvProject;
     @FXML
-    private TableColumn<Project, String> tcID;
+    public TableColumn<Project, String> tcID;
     @FXML
-    private TableColumn<Project, String> tcDateStart;
+    public TableColumn<Project, String> tcDateStart;
     @FXML
-    private TableColumn<Project, String> tcDateEnd;
+    public TableColumn<Project, String> tcDateEnd;
 
 //    ObservableList<Project> projectList = FXCollections.observableArrayList(Main.projects);
     ObservableList<Project> projectList = FXCollections.observableArrayList();
@@ -26,7 +26,7 @@ class timelineController {
     public void initialize() {
 
 //        tcID.setcellro
-        //            tcID. Main.projects.get(i).getProjectID();
+//        tcID. Main.projects.get(i).getProjectID();
         projectList.addAll(Main.projects);
 //        tcID.
 //        tcID.setCellFactory(new PropertyValueFactory<>("projectID"));
